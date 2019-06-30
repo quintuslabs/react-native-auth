@@ -56,7 +56,6 @@ export default class ProfileScreen extends Component {
         const { navigate } = this.props.navigation;
         return (
             <View style={styles.container}>
-                <StatusBar backgroundColor="#283f78" barStyle="light-content" />
                 <FlatList
                     data={[
                         { key: 'Android' }, { key: 'iOS' }, { key: 'Java' }, { key: 'Swift' },

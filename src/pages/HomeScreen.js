@@ -107,7 +107,7 @@ export default class Source extends React.Component {
         }
         return (
             <View style={styles.container}>
-                <StatusBar backgroundColor="#4E3AD9" barStyle="light-content" />
+
                 <FlatList
                     data={this.state.dataSource}
                     ItemSeparatorComponent={this.FlatListItemSeparator}

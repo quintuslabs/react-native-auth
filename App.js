@@ -6,10 +6,23 @@
  */
 
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
+import { Platform, StyleSheet, StatusBar, Text, View } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 import Routes from "./Routes";
+import colors from './src/assets/theme/colors'
 
-const App = () => <Routes />
+export default class Root extends React.Component {
+    render() {
+        return (
+            <View style={{ flex: 1 }}>
+                <StatusBar
+                    barStyle={'light-content'}
+                    backgroundColor={colors.primary}
+                />
+                <Routes />
+            </View>
+        )
+    }
+}
 
-export default App;
+

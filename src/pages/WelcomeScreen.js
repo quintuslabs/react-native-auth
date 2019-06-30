@@ -10,6 +10,7 @@ import { StyleSheet, Text, View, Button, Image, ImageBackground, StatusBar } fro
 
 import Logo from './../components/Logo';
 import { AsyncStorage } from "react-native";
+import styles from './../assets/theme/styles'
 
 export default class WelcomeScreen extends Component {
 
@@ -62,19 +63,3 @@ export default class WelcomeScreen extends Component {
     }
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-
-    backgroundImage: {
-        flex: 1,
-        width: '100%',
-        height: '100%',
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-
-});
