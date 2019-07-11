@@ -131,7 +131,7 @@ export default class RegisterScreen extends Component {
             }
 
 
-            axios.post("https://dummyapi.000webhostapp.com/api/register.php", {
+            axios.post("http://192.168.0.91/restapi/api/register.php", {
                 name: UserName,
                 email: UserEmail,
                 mobile: UserMobile,

@@ -122,9 +122,8 @@ const mapStateToProps = state => {
     return {
         error: state.userList.error,
         loading: state.userList.loading,
-        users: state.userList.tasks
+        users: state.userList.users,
     }
-
 }
 
 export default connect(mapStateToProps, { fetchUserList })(HomeScreen);

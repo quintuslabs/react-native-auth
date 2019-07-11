@@ -101,7 +101,7 @@ export default class LoginScreen extends Component {
                 this.setState({ isLoading: true });
             }
 
-            axios.post("https://dummyapi.000webhostapp.com/api/login.php", {
+            axios.post("http://192.168.0.91/restapi/api/login.php", {
                 email: userEmail,
                 password: userPassword
             }).then(response => {
