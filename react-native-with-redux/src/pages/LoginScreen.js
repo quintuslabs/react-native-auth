@@ -59,7 +59,7 @@ class LoginScreen extends Component {
             });
 
             this.props.navigation.navigate("Home");
-        } else if (nextProps.user === null) {
+        } else if (nextProps.error != null) {
             Snackbar.show({
                 title: nextProps.error,
                 duration: Snackbar.LENGTH_SHORT,
