@@ -11,16 +11,17 @@ import {
 } from './Types';
 
 import axios from 'axios';
+import { Logs } from 'expo';
 export const loginUser = ({ userEmail, userPassword }) => {
     return (dispatch) => {
         dispatch({ type: LOGIN_ATTEMPT });
 
         //call the backend
-        axios.post("http://192.168.0.91/restapi/api/login.php", {
+        axios.post("http://192.168.0.90/restapi/api/login.php", {
             email: userEmail,
             password: userPassword
         }).then(response => {
-
+            console.log(response + "");
             if (response.status === 200 && response.data !== null) {
 
                 handleResponse(dispatch, response.status, response.data)

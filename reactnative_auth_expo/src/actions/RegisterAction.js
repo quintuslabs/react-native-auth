@@ -17,7 +17,7 @@ export const registerUser = ({ UserName, UserEmail, UserMobile, UserPassword }) 
 
         console.log(UserName + " " + UserEmail + " " + UserMobile + " " + UserPassword)
 
-        axios.post("http://192.168.0.91/restapi/api/register.php", {
+        axios.post("http://192.168.0.90/restapi/api/register.php", {
             name: UserName,
             email: UserEmail,
             mobile: UserMobile,

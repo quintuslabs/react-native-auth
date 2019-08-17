@@ -80,7 +80,7 @@ class RegisterScreen extends Component {
         let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         var strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
         if (UserName == "") {
-           
+
             showMessage({
                 message: 'Please enter your Name',
                 type: "warning",

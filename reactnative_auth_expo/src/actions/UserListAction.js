@@ -16,7 +16,7 @@ export const fetchUserList = () => {
     return (dispatch) => {
         dispatch({ type: LOADING_USERS });
 
-        axios.get('http://192.168.0.91/restapi/api/users.php')
+        axios.get('http://192.168.0.90/restapi/api/users.php')
             .then(response => {
                 console.log(response.status);
                 console.log(response.data.users);
